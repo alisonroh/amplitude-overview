@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amplitude AI Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'IBM Plex Sans KR','IBM Plex Sans',sans-serif;background:#f2f4f8;color:#13171a;word-break:keep-all;overflow-wrap:break-word}
+
+  .wrap{max-width:480px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+
+  /* hero */
+  .hero{background:#0052f2;padding:20px;border-radius:12px}
+  .hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.12em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:8px}
+  .hero-title{font-size:22px;font-weight:600;color:#fff;line-height:1.25;margin-bottom:8px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,.85);line-height:1.7}
+
+  /* context */
+  .context{background:#fff;border:1px solid #0052f2;border-radius:12px;padding:16px}
+  .context-label{font-size:10px;font-weight:600;letter-spacing:.1em;color:#0052f2;text-transform:uppercase;margin-bottom:8px}
+  .context-body{font-size:13px;color:#373d42;line-height:1.75;margin-bottom:8px}
+  .context-body:last-of-type{margin-bottom:0}
+  .context-body strong{font-weight:600;color:#13171a}
+  .context-source{display:block;font-size:10px;color:#868d95;margin-top:6px}
+
+  /* section label */
+  .section-label{font-size:10px;font-weight:600;letter-spacing:.1em;color:#868d95;text-transform:uppercase;padding:0 4px}
+
+  /* cards */
+  .card{background:#fff;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px;border:0.75px solid #d5d9e0}
+  .card-header{display:flex;align-items:center;gap:8px}
+  .card-title{font-size:16px;font-weight:600;color:#13171a}
+  .badge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-left:auto;white-space:nowrap}
+  .b-blue{background:#0052f2;color:#fff}
+  .b-navy{background:#001a4f;color:#fff}
+  .b-lilac{background:#6980ff;color:#fff}
+  .b-violet{background:#a373ff;color:#fff}
+  .card-desc{font-size:13px;color:#50565b;line-height:1.65}
+  .flist{list-style:none;display:flex;flex-direction:column;gap:6px}
+  .flist li{font-size:13px;color:#13171a;display:flex;gap:8px;align-items:flex-start;line-height:1.55}
+  .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:5px}
+  .d-blue{background:#0052f2}.d-navy{background:#001a4f}.d-lilac{background:#6980ff}.d-violet{background:#a373ff}
+  .eg{background:#f2f4f8;border-radius:8px;padding:10px 12px;font-size:12px;color:#50565b;line-height:1.6}
+  .eg strong{color:#13171a;font-weight:600}
+
+  /* demo link inside card */
+  .demo-btn{display:inline-flex;align-items:center;gap:5px;background:#13171a;color:#6980ff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:8px;text-decoration:none;align-self:flex-start}
+  .demo-btn span{color:#fff;font-weight:400}
+
+  /* footer */
+  .footer{background:#13171a;border-radius:12px;padding:16px}
+  .footer-eyebrow{font-size:10px;font-weight:600;color:#6980ff;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+  .footer-headline{font-size:15px;font-weight:600;color:#fff;line-height:1.45;margin-bottom:8px}
+  .footer-body{font-size:13px;color:#868d95;line-height:1.65}
+  .footer-body strong{color:#d5d9e0;font-weight:500}
+
+  .bottom-space{height:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-eyebrow">Amplitude · AI Solutions Overview</div>
+    <div class="hero-title">데이터를 보는 것에서, AI와 함께 실행하는 것까지</div>
+    <div class="hero-sub">고객의 인지부터 피드백까지, 전체 여정의 신호를 하나의 AI 플랫폼에서 연결합니다.</div>
+  </div>
+
+  <div class="context">
+    <div class="context-label">왜 지금, 왜 AI 기반 분석인가</div>
+    <div class="context-body">많은 팀이 이미 데이터를 갖고 있습니다. 대시보드도 있고, 지표도 있습니다. 그런데도 <strong>"이 숫자로 내가 뭘 해야 하지?"</strong>라는 질문 앞에서 막히는 경험, 낯설지 않으실 겁니다. 데이터가 없어서가 아니라, 데이터가 실행으로 이어지지 않는 것이 진짜 문제입니다.</div>
+    <div class="context-body">Gartner는 이 간극을 해소하는 것을 <strong>'Decision Intelligence'</strong>라 부르며 2025년 AI Hype Cycle의 핵심 기술로 선정했습니다. "무엇이 일어났는가"를 보여주는 것에서, <strong>"다음에 무엇을 해야 하는가"를 AI가 제안하고 실행하는 단계</strong>로의 전환입니다.</div>
+    <div class="context-body">Amplitude는 이 흐름을 제품으로 구현했습니다. 고객의 인지부터 이탈 후 피드백까지, 전체 여정의 신호를 하나의 AI 플랫폼으로 연결해 모든 구성원이 데이터를 직접 액션으로 전환할 수 있도록 합니다.</div>
+    <span class="context-source">출처: Gartner AI Hype Cycle 2025 / Gartner Data &amp; Analytics Survey</span>
+  </div>
+
+  <div class="section-label">솔루션 살펴보기</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">Global Agent</div>
+      <div class="badge b-blue">AI 능동 분석</div>
+    </div>
+    <div class="card-desc">자연어 질문 한 줄로 Amplitude의 모든 데이터에 즉시 접근합니다. 데이터팀 없이도 임원부터 CS 담당자까지 직접 인사이트를 도출합니다.</div>
+    <ul class="flist">
+      <li><span class="dot d-blue"></span>퍼널·리텐션·코호트 자연어 조회</li>
+      <li><span class="dot d-blue"></span>차트·대시보드·보고서 자동 생성</li>
+      <li><span class="dot d-blue"></span>이상 지표 자동 서피싱 및 원인 제안</li>
+      <li><span class="dot d-blue"></span>임원 KPI 보고 패키지 원클릭 생성</li>
+    </ul>
+    <div class="eg"><strong>활용 예시</strong> "이번 주 모바일 리텐션이 왜 떨어졌지?" → 상관 행동 변화 자동 분석 후 즉시 답변</div>
+    <a class="demo-btn" href="https://www.youtube.com/watch?v=QoJWHjHESVM&feature=youtu.be" target="_blank">↗ <span>데모 영상 보기</span></a>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">AI Visibility</div>
+      <div class="badge b-navy">GEO 분석</div>
+    </div>
+    <div class="card-desc">고객이 서비스에 들어오기 전, AI가 우리 브랜드에 대해 무엇을 말하는지 추적합니다. Generative Engine Optimization의 핵심 인프라입니다.</div>
+    <ul class="flist">
+      <li><span class="dot d-navy"></span>주요 AI 플랫폼 내 브랜드 언급 빈도·맥락 추적</li>
+      <li><span class="dot d-navy"></span>경쟁사 대비 AI 추천 점유율 모니터링</li>
+      <li><span class="dot d-navy"></span>세그먼트별 사전 관심사·인텐트 파악</li>
+      <li><span class="dot d-navy"></span>부정 맥락 급증 시 실시간 알림</li>
+    </ul>
+    <div class="eg"><strong>활용 예시</strong> "OO 서비스 vs 경쟁사" 질문에서 AI가 우리 브랜드를 어떻게 포지셔닝하는지 실시간 확인</div>
+    <a class="demo-btn" href="https://www.youtube.com/watch?v=PUCz1ScpXCo&feature=youtu.be" target="_blank">↗ <span>데모 영상 보기</span></a>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">AI Feedback</div>
+      <div class="badge b-lilac">VoC AI 분석</div>
+    </div>
+    <div class="card-desc">고객이 서비스 이용 후 AI에 남기는 후기·불만·추천을 자동 수집하고 분석합니다. 설문 없이 진짜 고객의 목소리를 구조화된 인사이트로 전환합니다.</div>
+    <ul class="flist">
+      <li><span class="dot d-lilac"></span>AI 대화 내 후기·불만·추천 내용 자동 수집</li>
+      <li><span class="dot d-lilac"></span>긍정/부정 센티먼트 분류 및 트렌드 시각화</li>
+      <li><span class="dot d-lilac"></span>방문 전 기대 vs 방문 후 경험 Gap 자동 식별</li>
+      <li><span class="dot d-lilac"></span>비즈니스 임팩트 기반 개선 우선순위 자동 도출</li>
+    </ul>
+    <div class="eg"><strong>활용 예시</strong> "OO 앱 결제가 복잡했어" 류의 비정형 피드백을 자동 집계 → 서비스 개선 로드맵에 직접 반영</div>
+    <a class="demo-btn" href="https://www.youtube.com/watch?v=4-s52euP8o8" target="_blank">↗ <span>데모 영상 보기</span></a>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">AI MCP 연동</div>
+      <div class="badge b-violet">Enterprise AI</div>
+    </div>
+    <div class="card-desc">기업 내부 AI 워크플로우와 Amplitude 데이터를 MCP(Model Context Protocol)로 직접 연결합니다. 별도 ETL 없이 실시간 컨텍스트를 AI에 제공합니다.</div>
+    <ul class="flist">
+      <li><span class="dot d-violet"></span>사내 LLM·AI Agent에 Amplitude 데이터 컨텍스트 제공</li>
+      <li><span class="dot d-violet"></span>Claude, GPT 등 기업 AI 환경과 네이티브 연동</li>
+      <li><span class="dot d-violet"></span>행동 데이터 기반 실시간 개인화 자동화</li>
+      <li><span class="dot d-violet"></span>분석·운영·CS 시스템 간 데이터 사일로 해소</li>
+    </ul>
+    <div class="eg"><strong>활용 예시</strong> 사내 AI 챗봇이 Amplitude 행동 데이터를 실시간 참조 → 고객별 최적 응대 시나리오 자동 제안</div>
+    <a class="demo-btn" href="https://www.youtube.com/watch?v=ptJ-q4RT0FQ&feature=youtu.be" target="_blank">↗ <span>데모 영상 보기</span></a>
+  </div>
+
+  <div class="footer">
+    <div class="footer-eyebrow">직접 확인해보세요</div>
+    <div class="footer-headline">고객의 인지 → 경험 → 피드백, 하나의 플랫폼에서 끊김 없이 연결됩니다.</div>
+    <div class="footer-body">많은 기업이 데이터는 쌓지만, <strong>그 데이터로 무엇을 해야 할지 모르는 상태</strong>에 머뭅니다. Amplitude는 외부 AI 시그널부터 서비스 내 행동, 이탈 후 피드백까지 전부 연결해 분석이 아닌 <strong>실행으로 이어지는 인사이트</strong>를 만듭니다.</div>
+  </div>
+
+  <div class="bottom-space"></div>
+</div>
+</body>
+</html>
